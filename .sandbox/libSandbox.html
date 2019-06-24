@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+<meta charset="UTF-8">
+<title>Reactor Extension Library Sandbox</title>
+
+<script>
+	window.Coral = window.Coral || {};
+	Coral.options = {
+		typeKitId : 'buj6cmr'
+	};
+</script>
+
+<link rel="stylesheet"
+	href="//assets.adobedtm.com/activation/reactor/coralui/3.16.0/css/coral.css">
+<script
+	src="//assets.adobedtm.com/activation/reactor/coralui/3.16.0/js/libs/jquery.js"></script>
+<script
+	src="//assets.adobedtm.com/activation/reactor/coralui/3.16.0/js/coral.js"></script>
+
+<link href="sandbox.css" rel="stylesheet" type="text/css">
+<script src="container.js"></script>
+<script src="engine.js"></script>
+</head>
+
+<body class="coral--light">
+	<div class="nav">
+		<a is="coral-anchorbutton" variant="quiet" href="editor.html">Go
+			to rule editor</a> <a is="coral-anchorbutton" variant="quiet"
+			href="viewSandbox.html">Go to view sandbox</a>
+	</div>
+
+	<h1 class="coral-Heading coral-Heading--1">Reactor Extension Library Sandbox</h1>
+
+	Modify .sandbox/container.js and .sandbox/libSandbox.html then test the
+	result here. Check out
+	<a
+		href="https://www.npmjs.com/package/@adobe/reactor-sandbox#configuring-the-sandbox"
+		target="_blank">documentation</a> on how to generate the `.sandbox`
+	files.
+
+	 <p>
+	 	Check out the value of my Data Element: <span id="mycde"></span>
+	 	<br/>
+		Check out the value of my Data Element1: <span id="mycde1"></span>
+		<br/>
+		Check out the value of my Data Element2: <span id="mycde2"></span>
+		<br/>
+		Check out the value of my Data Element3: <span id="mycde3"></span>
+		<br/>
+		Check out the value of my Data Element4: <span id="mycde4"></span>
+		<br/>
+		Check out the value of my Data Element5: <span id="mycde5"></span>
+	</p>
+
+	<script>
+		var mycde = _satellite.getVar('CheckInput')('PORT_DSNWEQWE_mnkdskjsdh jagqteban');
+		var mySpan = document.querySelector("#mycde");
+		mySpan.innerHTML = mycde;
+		
+		var mycde1 = _satellite.getVar('CheckInput')('ABFSDFS SDQWEQEQWUYUT jkjcqiwu/oieuqo');
+		var mySpan = document.querySelector("#mycde1");
+		mySpan.innerHTML = mycde1;
+		
+		var mycde2 = _satellite.getVar('CheckInput')('Koop je nieuwe mobiele telefoon veilig en snel bij KPN');
+		var mySpan = document.querySelector("#mycde2");
+		mySpan.innerHTML = mycde2;
+		
+		var mycde3 = _satellite.getVar('CheckInput')('Brindha est formidable');
+		var mySpan = document.querySelector("#mycde3");
+		mySpan.innerHTML = mycde3;
+		
+		var mycde4 = _satellite.getVar('CheckInput')('tablets, smartwatches en Prepaid');
+		var mySpan = document.querySelector("#mycde4");
+		mySpan.innerHTML = mycde4;
+		
+		var mycde4 = _satellite.getVar('CheckInput')('!@#$%^&*() ~` FGDFGWRAD');
+		var mySpan = document.querySelector("#mycde5");
+		mySpan.innerHTML = mycde4;
+
+	</script> 
+	<script>
+		_satellite.pageBottom();
+	</script>
+</body>
+
+</html>
